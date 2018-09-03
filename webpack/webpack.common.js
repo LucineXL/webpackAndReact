@@ -4,9 +4,6 @@ module.exports = {
   entry: {
     app: './src/index.js'
   },
-//   output: {
-//     publicPath: '/'
-// },
   module: {
     rules: [
         {
@@ -24,7 +21,6 @@ module.exports = {
                     options: {
                         limit:500,  //是把小于500B的文件打成Base64的格式，写入JS
                         name: 'images/[name]_[hash:7].[ext]',
-                        // publicPath:"../",
                     }
                 }
             ]
