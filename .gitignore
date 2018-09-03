@@ -1,0 +1,7 @@
+node_modules
+dist/
+.deploy*/
+*.log
+db.json
+.vscode
+yarn.lock
