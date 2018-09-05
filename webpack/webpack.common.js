@@ -2,8 +2,9 @@ const path = require('path');
 
 module.exports = {
   entry: {
-    app: './src/index.js'
+    app: './src/index.tsx'
   },
+  devtool: "source-map",
   module: {
     rules: [
         {
@@ -12,6 +13,16 @@ module.exports = {
             use: {
                 loader: "babel-loader"
             }
+        },
+        { 
+            test: /\.(ts|tsx)?$/, 
+            loader: "awesome-typescript-loader",
+            exclude: /node_modules/
+        },
+        { 
+            enforce: "pre", 
+            test: /\.js$/, 
+            loader: "source-map-loader" 
         },
         {
             test: /\.(png|svg|jpg|gif)$/,
@@ -45,9 +56,12 @@ module.exports = {
         }
     ]
   },
+  resolve: {
+    extensions: [".ts", ".tsx", ".js", ".json"]
+  },
   plugins: [],
   output: {
     filename: '[name].bundle.js',
     path: path.resolve(__dirname, '../dist')
-  }
+  },
 };
