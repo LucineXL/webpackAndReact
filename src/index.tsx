@@ -1,6 +1,6 @@
 import * as React from 'react';
 import * as ReactDom from 'react-dom';
-import Root from './container/Root';
+import Root from './container/RootTs';
 import './index.scss';
 
 ReactDom.render(
