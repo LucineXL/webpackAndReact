@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDom from 'react-dom';
 import './index.scss';
-import logo from './logo.png';
+import logo from './source/image/logo.png';
 
 ReactDom.render(
     <div>Hello world
