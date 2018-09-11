@@ -1,0 +1,25 @@
+{
+    "parser": "babel-eslint",
+    "plugins": [
+        "react",
+    ],
+    "rules": {
+      "react/jsx-uses-react": "error",
+      "react/prop-types": "error",
+      "indent": ["error", 4, {
+        "SwitchCase": 1
+      }],
+      "no-extra-boolean-cast": "error",
+      "no-cond-assign": "error",
+      "no-magic-numbers": ["off", {
+        "ignoreArrayIndexes": true,
+        "ignore": [0, 1],
+        "enforceConst": true
+      }],
+      "max-params": ["error", 6],
+      "no-var": "error",
+      "no-console": "off",
+      "no-alert": "off",
+      "no-debugger": "off"
+    }
+  }
