@@ -5,7 +5,8 @@
   "license": "MIT",
   "scripts": {
     "start": "webpack-dev-server --open --inline --progress --config webpack/webpack.dev.js",
-    "build": "webpack --config webpack/webpack.prod.js"
+    "build": "webpack --config webpack/webpack.prod.js",
+    "eslint": "eslint --ext .js src"
   },
   "devDependencies": {
     "@types/react": "^16.4.13",
@@ -46,5 +47,5 @@
   },
   "pre-commit": [
     "eslint"
-  ],
+  ]
 }

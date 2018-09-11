@@ -8,19 +8,19 @@ export default class Root extends React.Component {
         let promise = new Promise(function(resolve, reject) {
             console.log('Promise');
             resolve();
-          });
+        });
           
-          promise.then(function() {
+        promise.then(function() {
             console.log('resolved.');
-          });
+        });
           
-          console.log('Hi!');
+        console.log('Hi!');
         return (
-          <div>
+            <div>
             我是 root
-            <Hello name="TypeScript" enthusiasmLevel={10} />
-            <img src={logo} />
-          </div>
+                <Hello name="TypeScript" enthusiasmLevel={10} />
+                <img src={logo} />
+            </div>
         )
     }
 }
