@@ -27,6 +27,7 @@
     "mini-css-extract-plugin": "^0.4.2",
     "node-sass": "^4.9.3",
     "optimize-css-assets-webpack-plugin": "^5.0.1",
+    "pre-commit": "^1.2.2",
     "react-hot-loader": "^4.3.4",
     "sass-loader": "^7.1.0",
     "source-map-loader": "^0.2.4",
