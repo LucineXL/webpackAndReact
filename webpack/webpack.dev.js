@@ -1,14 +1,14 @@
 const path = require('path');
 const webpack = require('webpack');
 const merge = require('webpack-merge');
-const common = require('./webpack.common.js');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const common = require('./webpack.common.js');
 
 module.exports = merge(common, {
     mode: 'development',
     devtool: 'inline-source-map',
-    devServer:{
-        contentBase:path.join(__dirname,"../src"),
+    devServer: {
+        contentBase: path.join(__dirname, '../src'),
         compress: true,
         port: 8033,
         hot: true,
@@ -37,9 +37,9 @@ module.exports = merge(common, {
             template: './src/index.html',
             inject: 'body',
             minify: {
-                html5: true
+                html5: true,
             },
-            hash: false
+            hash: false,
         }),
         new webpack.HotModuleReplacementPlugin(),
     ],
