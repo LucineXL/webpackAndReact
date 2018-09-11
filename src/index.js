@@ -4,6 +4,6 @@ import Root from './container/Root';
 import './index.scss';
 
 ReactDom.render(
-  <Root />,
-  document.getElementById('root')
+    <Root />,
+    document.getElementById('root')
 )
