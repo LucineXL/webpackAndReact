@@ -6,7 +6,7 @@
   "scripts": {
     "start": "webpack-dev-server --open --inline --progress --config webpack/webpack.dev.js",
     "build": "webpack --config webpack/webpack.prod.js",
-    "eslint": "eslint --ext .js src -c --no-eslintrc .eslintrc"
+    "eslint": "eslint --ext .js src"
   },
   "devDependencies": {
     "@types/react": "^16.4.13",
@@ -48,4 +48,7 @@
     "react": "^16.4.2",
     "react-dom": "^16.4.2"
   },
+  "pre-commit": [
+    "eslint"
+  ]
 }

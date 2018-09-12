@@ -14,11 +14,11 @@ export default class Root extends React.Component {
         });
         console.log('Hi!');
         return (
-          <div>
+            <div>
             我是 root
-            <Hello name="TypeScript" enthusiasmLevel={10} />
-            <img src={logo} />
-        </div>
+                <Hello name="TypeScript" enthusiasmLevel={10} />
+                <img src={logo} alt="" />
+            </div>
         );
     }
-};
+}

@@ -5,13 +5,20 @@
         "jsx-a11y"
     ],
     "extends": ["airbnb", "plugin:react/recommended"],
+    "env": {
+      "browser": true,
+      "node": true,
+      "es6": true,
+      "amd": true
+    },
     "rules": {
-      "jsx-a11y/no-static-element-interactions": "warn",
       "react/jsx-uses-react": "error",
       "react/prop-types": "error",
+      "jsx-a11y/no-static-element-interactions": "warn",
       "indent": ["error", 4, {
         "SwitchCase": 1
       }],
+      "react/jsx-indent": ["error", 4],
       "no-extra-boolean-cast": "error",
       "no-cond-assign": "error",
       "no-magic-numbers": ["off", {
@@ -24,9 +31,8 @@
       "no-console": "off",
       "no-alert": "off",
       "no-debugger": "off",
-      "import/no-extraneous-dependencies": "off",
-      "import/prefer-default-export": "off",
-       // 以下规则  为 "off" 的  都是去除掉的规则, 不要看反了 ^-^
+  
+      // 以下规则  为 "off" 的  都是去除掉的规则, 不要看反了 ^-^
       "eqeqeq": "off", // 要求使用 === 和 !==
       "one-var": "off", // 强制函数中的变量要么一起声明要么分开声明
       "one-var-declaration-per-line": "off", // 要求或禁止在变量声明周围换行
@@ -40,14 +46,14 @@
       "no-lonely-if": "off", // 禁止 if 作为唯一的语句出现在 else 语句中
       "block-scoped-var": "off", // 强制把变量的使用限制在其定义的作用域范围内
       "global-require": "off", // 要求 require() 出现在顶层模块作用域中
-
+  
       "no-shadow": "off", // 禁止变量声明与外层作用域的变量同名
       "no-eval": "warn", // 禁用 eval
-
+  
       "object-shorthand": "off", // 要求对象字面量中方法和属性使用简写语法
       "quote-props": "off", // 要求对象字面量属性名称使用引号
       "padded-blocks": "off", // 要求块前后不能出现空行
-
+  
       "func-names": "off", // 要求使用命名的 function 表达式
       "prefer-arrow-callback": "off", // 要求使用箭头函数作为回调
       "no-return-assign": "off", // 禁止在 return 语句中使用赋值语句
@@ -56,7 +62,7 @@
       "no-param-reassign": "off", // 禁止对 function 的参数进行重新赋值
       "prefer-spread": "off", // 要求使用扩展运算符而非 .apply()
       "no-use-before-define": "off", // 禁止在变量定义之前使用它们
-
+  
       "camelcase": "off", // 骆驼命名,
       "no-prototype-builtins": "off", // 禁止使用对象默认属性
       "no-redeclare": "off", // 禁止重新声明变量
@@ -94,6 +100,7 @@
       "class-methods-use-this": "off",
       "object-curly-newline": "off",
       "no-trailing-spaces": "off",
-      "no-inline-comments": "off" //禁止行内备注
+      "react/prefer-stateless-function": "off",
+      "react/jsx-filename-extension": "off"
     }
   }
