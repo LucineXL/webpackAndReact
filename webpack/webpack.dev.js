@@ -19,18 +19,18 @@ module.exports = merge(common, {
                 test: /\.css$/,
                 use: [
                     'style-loader',
-                    'css-loader'
-                ]
+                    'css-loader',
+                ],
             },
             {
                 test: /\.scss$/,
                 use: [
                     'style-loader',
                     'css-loader',
-                    'sass-loader'
-                ]
+                    'sass-loader',
+                ],
             },
-        ]
+        ],
     },
     plugins: [
         new HtmlWebpackPlugin({

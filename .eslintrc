@@ -14,11 +14,12 @@
     "rules": {
       "react/jsx-uses-react": "error",
       "react/prop-types": "error",
-      "jsx-a11y/no-static-element-interactions": "warn",
+      "jsx-a11y/no-static-element-interactions": "off",
       "indent": ["error", 4, {
         "SwitchCase": 1
       }],
       "react/jsx-indent": ["error", 4],
+      "react/jsx-indent-props": ["error", 4],
       "no-extra-boolean-cast": "error",
       "no-cond-assign": "error",
       "no-magic-numbers": ["off", {
@@ -101,6 +102,7 @@
       "object-curly-newline": "off",
       "no-trailing-spaces": "off",
       "react/prefer-stateless-function": "off",
-      "react/jsx-filename-extension": "off"
+      "react/jsx-filename-extension": "off",
+      "jsx-a11y/click-events-have-key-events": "off"
     }
   }
